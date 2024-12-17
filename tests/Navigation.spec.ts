@@ -1,9 +1,9 @@
-import { test, expect } from '@playwright/test'
+import { test } from '@playwright/test'
 import { NavigationPage } from '../page-objects/NavigationPage'
 import { FormLayoutsPage } from '../page-objects/formLayoutsPage'
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('http://localhost:4200/', { waitUntil: "networkidle" })
+    await page.goto('/', { waitUntil: "networkidle" })
 })
 test('navigate to form page', async ({ page }) => {
     const navigateTo = new NavigationPage(page)
