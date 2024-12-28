@@ -21,9 +21,8 @@ export class FormLayoutsPage {
      * @param email - valid email for the test user
      * @param rememberMe - true or false if user session to be saved
      */
-
     async submitInlineForm(name: string, email: string, rememberMe: boolean) {
-        const inlineForm = this.page.locator('nb-card', {hasText: "Inline form"})
+        const inlineForm = this.page.locator('nb-card', { hasText: "Inline form" })
         await inlineForm.getByRole('textbox', {name: "Jane Doe"}).fill(name)
         await inlineForm.getByRole('textbox', {name: "Email"}).fill(email)
         if(rememberMe){
