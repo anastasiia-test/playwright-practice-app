@@ -6,6 +6,6 @@ The original repo is here: https://github.com/akveo/ngx-admin
 
 ## Test
 To run the tests in the container execute the following command:
-<code>docker-compose up --build</code>
+<code>docker-compose up --build</code>.<br>
 To run the tests on your local run this:
-<code>npx playwright test</code>
+<code>npx playwright test</code>.
